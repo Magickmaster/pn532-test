@@ -34,7 +34,7 @@ public final class App {
      */
     public static void main(String[] args) throws IOException, UnsupportedBusNumberException, InterruptedException, TransmissionException, TimeoutException {
         System.out.println("Hello World!");
-        I2CBus i2c = I2CFactory.getInstance(I2CBus.BUS_1);
+        I2CBus i2c = I2CFactory.getInstance(I2CBus.BUS_1); // i2c bus of device 
         I2CDevice dev = i2c.getDevice(0x24); // NFC module addr
 
         System.out.println("Retrieving Firmware Data");
